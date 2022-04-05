@@ -6,6 +6,8 @@ public class Inscription {
 	private long id;
 	private LocalDate date;
 	private static int compteur = 0;
+	private Niveau niveau;
+	private AnneeAcademique anneeAcademique;
 	
 	public Inscription() 
 	{
@@ -30,8 +32,23 @@ public class Inscription {
 	public void setDate(LocalDate date) {
 		this.date = date;
 	}
-
 	
+	public Niveau getNiveau() {
+		return niveau;
+	}
+
+	public void setNiveau(Niveau niveau) {
+		this.niveau = niveau;
+	}
+
+	public AnneeAcademique getAnneeAcademique() {
+		return anneeAcademique;
+	}
+
+	public void setAnneeAcademique(AnneeAcademique anneeAcademique) {
+		this.anneeAcademique = anneeAcademique;
+	}
+
 	@Override
 	public String toString() {
 		return "Inscription [id=" + id + ", date=" + date + "]";

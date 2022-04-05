@@ -1,10 +1,12 @@
 package com.supinfo.java.chap2;
 
+import java.util.List;
 
 public class Niveau {
 	private long id;
 	private String designation;
 	private static int compteur = 0;
+	private List<Inscription> inscription;
 	
 	public Niveau() {
 		Niveau.compteur++;
@@ -27,6 +29,14 @@ public class Niveau {
 
 	public void setDesignation(String designation) {
 		this.designation = designation;
+	}
+
+	public List<Inscription> getInscription() {
+		return inscription;
+	}
+
+	public void setInscription(List<Inscription> inscription) {
+		this.inscription = inscription;
 	}
 
 	@Override

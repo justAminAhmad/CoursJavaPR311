@@ -1,10 +1,13 @@
 package com.supinfo.java.chap2;
 
+import java.util.List;
+
 public class AnneeAcademique {
 	private long id;
 	private String libele;
 	private String description;
 	private static int compteur = 0;
+	private List<Inscription> inscription;
 	
 	public AnneeAcademique()
 	{
@@ -37,6 +40,14 @@ public class AnneeAcademique {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public List<Inscription> getInscription() {
+		return inscription;
+	}
+
+	public void setInscription(List<Inscription> inscription) {
+		this.inscription = inscription;
 	}
 
 	@Override
